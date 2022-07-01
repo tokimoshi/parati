@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for you l.</title>
+    
+</head>
+<style>
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  font-family:sans-serif;
+}
+h1{
+  margin:auto;
+  margin-top:100px;
+}
+.button{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  text-decoration:none;
+  background:rgb(46, 7, 220);
+  color:#fff;
+  padding:20px 35px;
+  font-size:20px;
+  border-radius: 15px;
+}
+#sí{
+  left:20%;
+  transform:translateY(-50%) translateX(-20%);
+}
+#no{
+  left:80%;
+  transform:translateY(-50%) translateX(-80%);
+}
+
+.flip_letters {
+  position: relative;
+  text-align: center;
+  padding-left: 20%;
+  width: 100%;
+}
+
+.flip_letters span {
+  font-size: 40px;
+ 
+  color: #ffffff;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--flip));
+}
+
+</style>
+<body>
+  <div>
+  <video src="cora.mp4" style="min-height: 100%;min-width: 100%;position: fixed;right: 0; bottom: 0;" autoplay="true" muted="true" loop="true" poster=""></video>
+    <h1 style="color:#fff;">¿Me perdonas   mi amor❤️?</h1>
+
+    
+  <div class="flip_letters">
+    <span style="--flip:1">M</span>
+    <span style="--flip:2">E</span>
+    <span style="--flip:3">❤️ </span>
+    <span style="--flip:4">P</span>
+    <span style="--flip:5">E</span>
+    <span style="--flip:6">R</span>
+    <span style="--flip:7">D</span>
+    <span style="--flip:8">O</span>
+    <span style="--flip:9">N</span>
+    <span style="--flip:10">A</span>
+    <span style="--flip:11">S</span>
+    <span style="--flip:12">❤️</span>
+    <span style="--flip:13">L</span>
+    <span style="--flip:14">I</span>
+    <span style="--flip:13">Z</span>
+    <span style="--flip:14">?</span>
+   </div>
+
+</div>
+</div>
+        <a href="#" name="acepto" class="button" id="sí">SÍ</a>
+        <a href="#" class="button" id="no">NO</a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+                    let sí=document.getElementById('sí');
+            sí.addEventListener("click",function(e){
+
+              Swal.fire({
+  icon: 'success',
+  title: 'TE AMO ❤️',
+  text: 'Sabía que lo harias TE AMO❤️ valio la pena todo',
+ 
+})
+     
+            });
+
+            let no=document.getElementById('no');
+            no.addEventListener("mousemove",function(e){
+              let x =Math.round(Math.random() * 93  );
+              let y =Math.round(Math.random() * 93  );
+              no.style.left = x+"%";
+              no.style.top = y+"%";
+            });
+
+
+    </script>
+ 
+</body>
+</html>
